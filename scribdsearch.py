@@ -6,11 +6,11 @@ for x in f:
     query = 'url:scribd ' + x
     my_results_list = []
 
-    for i in search(query,        # The query you want to run
-                    num = 10,     # Number of results per page
-                    start = 0,    # First result to retrieve
-                    stop = None,  # Last result to retrieve
-                    pause = 2.0,  # Lapse between HTTP requests
+    for i in search(query,        
+                    num = 10,     
+                    start = 0,    
+                    stop = None,  
+                    pause = 2.0,  
                 ):  
         
         my_results_list.append(i)

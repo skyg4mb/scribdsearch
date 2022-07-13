@@ -3,13 +3,13 @@ from googlesearch import search
 f = open("searchfile.txt", "r")
 
 for x in f: 
-    query = 'url:scribd ' + x
+    query = 'site:scribd.com ' + x
     my_results_list = []
 
-    for i in search(query,        
-                    num = 10,     
+    for i in search(query,
+                    num = 10,
                     start = 0,    
-                    stop = None,  
+                    stop = 10,  
                     pause = 2.0,  
                 ):  
         
